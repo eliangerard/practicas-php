@@ -1,0 +1,122 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+    top: 0;
+    width: 80%;
+    height: 4rem;
+}
+#paginas {
+    display: flex;
+}
+a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(148, 148, 148);
+    margin: 1rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 0.75rem;
+    width: 6rem;
+    background-color: rgba(35, 128, 250, 0);
+    transition: background-color 150ms, color 100ms;
+}
+a:hover {
+    background-color: rgb(35, 128, 250);
+    color: white;
+}
+#content {
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100%);
+}
+header {
+    text-align: center;
+}
+hr {
+    border: 1px solid rgba(0, 0, 0, 0.055);
+    width: 90%;
+}
+section {
+    padding: 2rem;
+}
+table {
+    width: 100%;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.103);
+    border-spacing: 1rem;
+}
+.tableTitle {
+    width: 30%;
+}
+th {
+    color: rgb(35, 128, 250);
+    font-size: large;
+    text-align: center;
+}
+tr {
+    outline: 0px solid rgb(35, 128, 250);
+    transition: outline 150ms;
+}
+.idAlumno {
+    font-weight: bolder;
+}
+td {
+    border-radius: 0.5rem;
+    transition: outline 150ms;
+    padding: 0.75rem;
+    outline: 0px solid rgb(35, 128, 250);
+}
+
+
+/* td:hover {
+    outline: 4px solid rgb(35, 128, 250);
+} */
+.button {
+    border: none;
+    border-radius: 0.75rem;
+    background-color: rgb(35, 128, 250);
+    padding: 0.5rem;
+    font-weight: bold;
+    color: white;
+    width: 12rem;
+}
+
+.inpText {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 2rem;
+    border-radius: 0.75rem;
+    outline: 2px solid rgba(0, 0, 0, 0.199);
+    padding: 0.5rem;
+    transition: outline 100ms, background-color 150ms;
+}
+
+.inpText:focus {
+    outline: 2px solid rgb(35, 128, 250);
+}
+.tableIcon {
+    width: 1.3rem;
+    fill: rgb(35, 128, 250);
+}
+.tableIcon:hover {
+    cursor: pointer;
+}
+input:disabled{
+    background-color: rgba(0, 0, 0, 0.041);
+    outline: 0px solid rgba(0, 0, 0, 0.199);
+}
+input:disabled:hover {
+    outline: none;
+}
